@@ -7,7 +7,7 @@ sitemap: false
 hide_last_modified: true
 ---
 
-
+Accurate monitoring of crop status over the course of the growing season is key to understanding the relationship between hydroclimatology and crop yields. The US Department of Agriculture (USDA) National Agricultural Statistics Service (NASS) provides weekly crop condition reports as surveyed by farmers and other agricultural experts. 
 
 
 
