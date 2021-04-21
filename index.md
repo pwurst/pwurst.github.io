@@ -1,11 +1,16 @@
 ---
 layout: page
 title: Welcome!
+image:
+ path: /assets/img/icons/weather-1615103.jpg
 sitemap: false
 hide_last_modified: true
 ---
 
-Welcome to HyBloglogy, a blog about hydoclimatalogy and it's impacts on society.
+## HyBloglogy, a blog about hydoclimatalogy and it's impacts on society.
+
+
+
 
 Hydroclimatology is the study of the relationships between climate and the hydrologic cycle. Climate anomalies, or the deviation of climate conditions from the norm, often result in hydrologic anomalies, that is a deficit or surplus of available surface water. In other words, droughts or floods.
 
