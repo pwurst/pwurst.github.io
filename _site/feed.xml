@@ -1,23 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-04-20T14:52:40-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">HyBlogLogy</title><subtitle>A blog about hydroclimatology, society, and tech.
-</subtitle><author><name>&lt;Patrick&gt; &lt;Wurster&gt;</name><email>&lt;pmwurster@gmail.com&gt;</email></author><entry><title type="html">Crop Condition Monitoring Using NASA’s SMAP Level-4 Carbon Product</title><link href="http://localhost:4000/blog/publications/2021-04-20-monitoring-crop-status-l4c/" rel="alternate" type="text/html" title="Crop Condition Monitoring Using NASA’s SMAP Level-4 Carbon Product" /><published>2021-04-20T00:00:00-06:00</published><updated>2021-04-20T00:00:00-06:00</updated><id>http://localhost:4000/blog/publications/monitoring-crop-status-l4c</id><content type="html" xml:base="http://localhost:4000/blog/publications/2021-04-20-monitoring-crop-status-l4c/">&lt;p&gt;Accurate monitoring of crop status over the course of the growing season is key to understanding the relationship between hydroclimatology and crop yields.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4001/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4001/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-04-21T13:38:17-06:00</updated><id>http://localhost:4001/feed.xml</id><title type="html">HyBlogLogy</title><subtitle>A blog about hydroclimatology, society, and tech.
+</subtitle><author><name>Patrick Wurster</name><email>pmwurster@gmail.com</email></author><entry><title type="html">Crop Condition Monitoring Using NASA’s SMAP Level-4 Carbon Product</title><link href="http://localhost:4001/blog/publications/2021-04-20-monitoring-crop-status-l4c/" rel="alternate" type="text/html" title="Crop Condition Monitoring Using NASA’s SMAP Level-4 Carbon Product" /><published>2021-04-20T00:00:00-06:00</published><updated>2021-04-20T00:00:00-06:00</updated><id>http://localhost:4001/blog/publications/monitoring-crop-status-l4c</id><content type="html" xml:base="http://localhost:4001/blog/publications/2021-04-20-monitoring-crop-status-l4c/">&lt;h2 id=&quot;issue&quot;&gt;ISSUE&lt;/h2&gt;
+&lt;p&gt;Accurate monitoring of crop status over the course of the growing season is key to understanding the relationship between hydroclimatology and crop yields.&lt;/p&gt;
 
-&lt;p&gt;The US Department of Agriculture (USDA) National Agricultural Statistics Service (NASS) provides weekly crop condition reports through their data portal &lt;a href=&quot;https://quickstats.nass.usda.gov/&quot;&gt;Quick Stats&lt;/a&gt;. Crop conditions are assessed by farmers and other agricultural experts in terms of the field percent observed as “Excellent”, “Good”, “Fair”, “Poor”, or “Very Poor”. Detailed definitions of the crop condition categories are provided by NASS &lt;a href=&quot;https://www.nass.usda.gov/Publications/National_Crop_Progress/terms_definitions.php#condition&quot;&gt;here&lt;/a&gt;. However, there are two major limitations in using the crop condition reports for scientific analysis:&lt;/p&gt;
+&lt;h2 id=&quot;problem&quot;&gt;PROBLEM&lt;/h2&gt;
+&lt;p&gt;Information on crop condition at high spatial and temporal scales over large areas has been difficult to obtain. The US Department of Agriculture (USDA) National Agricultural Statistics Service (NASS) does an excellent job of providing valuable crop data through their data portal &lt;a href=&quot;https://quickstats.nass.usda.gov/&quot;&gt;Quick Stats&lt;/a&gt;, including weekly crop condition reports. Crop conditions are assessed by farmers and other agricultural experts in terms of the field percent observed as “Excellent”, “Good”, “Fair”, “Poor”, or “Very Poor”. Detailed definitions of the crop condition categories are provided by NASS &lt;a href=&quot;https://www.nass.usda.gov/Publications/National_Crop_Progress/terms_definitions.php#condition&quot;&gt;here&lt;/a&gt;. However, there are two major limitations in using the crop condition reports for scientific analysis:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;The assessments are ordinal and subjective in nature, making quantitative analysis difficult.&lt;/li&gt;
   &lt;li&gt;The assessments are only available at the state-level, and not at county-level or finer spatial scales. The relatively rough spatial scale can be problematic in larger states with diverse climate conditions and farming practices. For example, crop conditions in Montana can vary widely between the wetter and cooler mountainous west where crops are primarily irrigated, and the dryer and warmer eastern praries where crops are primarily rain-fed.&lt;/li&gt;
 &lt;/ol&gt;
 
+&lt;h2 id=&quot;solution&quot;&gt;SOLUTION&lt;/h2&gt;
 &lt;p&gt;The first limitation was addressed by&lt;a href=&quot;https://www.pnas.org/content/117/31/18317&quot;&gt;&lt;cite&gt;Begauria and Maneta, 2020&lt;/cite&gt;&lt;/a&gt; who transformed the ordinal data into a continuous crop condition index (CCI) that isolated the effect of natural random variability (i.e., drought, disease, etc.). For example, the effect of the &lt;a href=&quot;https://en.wikipedia.org/wiki/2012%E2%80%9313_North_American_drought&quot;&gt;2012 drought&lt;/a&gt; can be observed in CCI values shown in Figure 1.&lt;/p&gt;
+&lt;p&gt;
 
 &lt;!-- _includes/image.html --&gt;
 &lt;div class=&quot;image-wrapper&quot;&gt;
     
-        &lt;img src=&quot;http://localhost:4000/assets/img/blog/Begauria2020_F3.jpg&quot; alt=&quot;Figure 1&quot; /&gt;
+        &lt;img src=&quot;http://localhost:4001/assets/img/blog/Begauria2020_F3.jpg&quot; alt=&quot;Figure 1&quot; /&gt;
     
     
-        &lt;p class=&quot;image-caption&quot;&gt;Figure 1. Crop condition index (CCI) for corn in selected states over 2012. Portions of the US corn belt suffered a severe drought over the growing season, as indicated by negative (red) CCI values. Values around zero indicate the normal condition.&lt;/p&gt;
+        &lt;p class=&quot;image-caption&quot;&gt;Figure 1. Crop condition index (CCI) for corn in selected states over 2012. Portions of the US corn belt suffered a severe drought over the growing season, as indicated by negative (red) CCI values. Values around zero indicate the normal condition. Figure borrowed with permission from &lt;cite&gt;Begauria and Maneta (2020)&lt;/cite&gt;.&lt;/p&gt;
     
 &lt;/div&gt;
 
-&lt;p&gt;However, CCI values remained at the state-level which may not capture variability in crop condition in larger states.&lt;/p&gt;</content><author><name>&lt;Patrick&gt; &lt;Wurster&gt;</name><email>&lt;pmwurster@gmail.com&gt;</email></author><category term="publications" /><summary type="html">Accurate monitoring of crop status over the course of the growing season is key to understanding the relationship between hydroclimatology and crop yields.</summary></entry></feed>
+
+&lt;p&gt;
+Recently [&lt;cite&gt;Jones et al. (2017)&lt;/cite&gt;](https://ieeexplore.ieee.org/document/8008865) developed the SMAP Level-4 Carbon Product (L4C), a satellite informed model that estimates carbon exchange components including gross primary production (GPP). The project was a collaberation between NASA and the UM's Numerical Terradynamic Simulation Group [(NTSG)](https://www.ntsg.umt.edu/). Gross primary production (GPP) is a good indicator of crop condition because it captures the growth of the plant as the season progresses. The L4C is novel in that it incorporates soil moisture estimates provided by NASA's Soil Moisture Active Passive satellite (SMAP). SMAP observes microwave radiation emmitted by the Earth's surface which is sensitive to soil moisture conditions in the top 5 cm of the soil. GPP is proportional to the available soil moisture, making soil moisture an important observation when estimating GPP. Continuous soil moisture observations provided by SMAP are very useful because in-situ observations are limited by sparse point measurements. The L4C also relys on available radiation, temperature, and vapor pressure deficit. The L4C provides daily estimates at up to a 1-km resolution for different biomes like forest, grassland, and crops.
+
+&lt;p&gt;
+We thought that anomalies in the accumulated GPP at different stages of the growing season would be a good indicator of crop condition. If so, then the L4C could provide a measure of crop condition over the growing season at a scale of around 1-km, or about 250 acres. This is much better than crop conditions at the state-level, or even county-level.
+&lt;p&gt;
+We compared anomalies in CCI to anomalies in the total GPP over croplands within each state for two broadleaf plant types (corn and soybeans) and two cereal plant types (barley and spring wheat) to see how well the L4C indicated crop conditions at the state-level. We found that the two were significantly correlated, particularly after around 6-8 weeks after planting. 
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt;
+    
+        &lt;img src=&quot;http://localhost:4001/assets/img/blog/Wurster2020b_F5.jpg&quot; alt=&quot;Figure 2&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;Figure 2. Correlations between the state-level CCI and total accumulated GPP anomaly aggregated within the corresponding state at key stages in growth development for (A) corn, (B) soybeans, (C) barley, and (D) spring wheat. Darker greens indicate better agreement and the black dots indicate a significant correlation. Borrowed with permission from &lt;cite&gt;Wurster et al. (2020) &lt;/cite&gt;&lt;/p&gt;
+    
+&lt;/div&gt;
+ 
+
+The comparison between CCI and GPP anomalies showed that the L4C could provide information about crop condition at relatively high spatial scales (weekly), but the spatial scale remained relatively course (state-level).
+&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;</content><author><name>Patrick Wurster</name><email>pmwurster@gmail.com</email></author><category term="publications" /><summary type="html">ISSUE Accurate monitoring of crop status over the course of the growing season is key to understanding the relationship between hydroclimatology and crop yields.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4001/assets/img/blog/GPP2017.jpg" /><media:content medium="image" url="http://localhost:4001/assets/img/blog/GPP2017.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
