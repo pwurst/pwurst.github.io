@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Welcome to HyBlogLogy by Patrick Wurster
+title: Welcome to HyBlogLogy!
 image:
  path: /assets/img/icons/weather-1615103.jpg
 sitemap: false
