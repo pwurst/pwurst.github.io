@@ -1,31 +1,28 @@
 ---
 layout: post
 title: Crop Condition Monitoring Using NASA's SMAP Level-4 Carbon Product
-image: /assets/img/blog/GPP2017.jpg
+image: /assets/img/blog/smap_jpl.jpg
 accent_image:
-  background: url('/assets/img/blog/GPP2017.jpg) center/cover
+  background: url('/assets/img/blog/smap_jpl.jpg) center/cover
   overlay: false
 accent_color: '#ccc'
 theme_color: '#ccc'
 description: >
-  Brief on  our paper in Frontiers in Big Data. Figure by Patrick Wurster.
+  Soil Moisture Estimated by NASA's Soil Moisture Active Passive (SMAP) Satellite Helps Provide Information on Crop Condition. Photo by NASA Jet Propulsion Laboratory.
 sitemap: false
 hide_last_modified: true
 ---
 # Crop Condition Monitoring Using NASA's SMAP Level-4 Carbon Product
-Above: Crop conditions represented by the SMAP Level-4 Carbon Product during mid-August in 2017. Red colors are indicating below normal conditions while blue colors indicate better than normal conditions. Notice the dark red area over the Northern Great Plains that coincided with a sever flash drought. Image by Patrick Wurster.
-
 
 ## Summary:
-A collaboration between the University of Montana's Geosciences Department and the Numerical Terradynamic Simulation Group (NTSG) shows that the SMAP Level-4 Carbon Product, developed by NASA and the NTSG, provides valuable information on crop conditions over the course of the growing season.
+A collaboration between my research group and the Numerical Terradynamic Simulation Group (NTSG) shows that the SMAP Level-4 Carbon Product, developed by NASA and the NTSG, provides valuable information on crop conditions at higher spatial and temporal resolution than what is currently available.
 
 ## Implications:
-*	**Filling in knowledge gaps:** While the US provides a wealth of information on crop condition and more, many countries where agriculture is important do not have such resources. The L4C has the potential to fill this gap in countries where condition data is not available, which may work to improve global food security.
-*	**Informing response:** The L4C can identify areas where crop production is more sensitive to climate anomalies and areas less effected, providing information to farmers and policy-makers about where to allocate valuable mitigation resources.
-*	**Bridging different "ways of knowing":** Farmers are experts in the cultivation of crops, and we integrate their knowledge into our scientific analysis. Integrating different "ways of knowing", like farmer knowledge and science, is key to adapting to an uncertain future.
+*	**Filling in knowledge gaps:** Weekly crop condition reports available in the US are only available for individual states and is not available at the county-level. The course spatial scale may not fully capture crop conditions, particularly in larger states where crop conditions vary from place to place. Our research shows the L4C can provide information about crop condition at finer spatial scales than what is currently available. Additionally, Many countries across the world where agriculture is important do not have comprehensive data on crop condition. The L4C has the potential to fill this gap which can improve global food security.
+*	**Bridging different "ways of knowing":** Farmers are experts in the cultivation of crops, and we integrate their knowledge into our scientific analysis. Integrating different "ways of knowing" like farmer knowledge and western science, is key to adapting to an uncertain future.
  
 ## PROBLEM
-Information on crop condition at high spatial and temporal scales over large regions or continents is important for understanding the impacts of climate anomalies on agriculture. The US Department of Agriculture (USDA) National Agricultural Statistics Service (NASS) does an excellent job of providing valuable crop data for the United States through their data portal [Quick Stats](https://quickstats.nass.usda.gov/), including weekly crop condition reports. Crop conditions are assessed by farmers and other agricultural experts in terms of the field percent observed as "Excellent", "Good", "Fair", "Poor", or "Very Poor" which are provided to and reported by NASS. Detailed definitions of the crop condition categories are provided by NASS [here](https://www.nass.usda.gov/Publications/National_Crop_Progress/terms_definitions.php#condition). However, there are two major limitations in using the crop condition reports for scientific analysis:
+Information on crop condition at high spatial and temporal scales over large regions or continents is important for understanding the impacts of climate anomalies on agriculture. The US Department of Agriculture (USDA) National Agricultural Statistics Service (NASS) does an excellent job of providing valuable information on crop condition for the United States through their data portal [Quick Stats](https://quickstats.nass.usda.gov/). Crop conditions are assessed by farmers and other agricultural experts in terms of the field percent observed as "Excellent", "Good", "Fair", "Poor", or "Very Poor" which are provided to and reported by NASS. Detailed definitions of the crop condition categories are provided by NASS [here](https://www.nass.usda.gov/Publications/National_Crop_Progress/terms_definitions.php#condition). However, there are two major limitations in using the crop condition reports for scientific analysis:
 
 1. The assessments are ordinal and subjective in nature (e.g., “Good” vs “Fair”), making quantitative analysis difficult.
 2. The assessments are only available at the state-level, and not at county-level or finer spatial scales. The relatively rough spatial scale can be problematic in larger states with diverse climate conditions and farming practices. For example, crop conditions in Montana can vary widely between the wetter and cooler mountainous west where crops are primarily irrigated, and the dryer and warmer eastern praries where crops are primarily rain-fed. 
@@ -49,12 +46,14 @@ We compared anomalies in CCI to anomalies in the total GPP over croplands within
 Figure 2. Correlations between the state-level CCI and total accumulated GPP anomaly aggregated within the corresponding state at key stages in growth development for (A) corn, (B) soybeans, (C) barley, and (D) spring wheat. Darker greens indicate better agreement and the black dots indicate a significant correlation. Borrowed with permission from <cite>Wurster et al. (2020) </cite>. 
 {:.figcaption}
 
-The comparison between CCI and GPP anomalies showed that the L4C could provide information about crop condition at relatively high temporal scales (weekly), but the spatial scale remained relatively course (state-level). NASS also provides annual crop-yield data at the county-level, which provided the opportunity to compare the L4C to data and higher spatial resolutions, albeit at lower temporal resolution (annual as opposed to weekly). We compared weekly GPP anomalies provided by the L4C to annual crop yields at the county-level, and the results were similar to the comparison with CCI. Figure 3 shows the agreement between GPP anomalies and crop-yield anomalies at the county-level. 
+The comparison between CCI and GPP anomalies showed that the L4C could provide information about crop condition at relatively high temporal scales (weekly), but the spatial scale remained relatively course (state-level). So, we also used annual crop-yield data provided by NASS at the county-level, which provided the opportunity to compare the L4C to data and higher spatial resolutions, albeit at lower temporal resolution (annual as opposed to weekly). The results from the yeild analysis were similar to the comparison with CCI. Figure 3 shows the agreement between GPP anomalies and crop-yield anomalies at the county-level. 
 
 ![Figure3](/assets/img/blog/Wurster2020b_F3.png)
 
 Figure 3. Correlations between county-level yield anomalies and county-level GPP anomalies for (A) corn and (B) soybeans at key stages of the growing season. Greener colors indicate higher positive correlations, which tend to increase as the season progresses. Soybean yield anomalies tend to be more correlated with GPP anomalies than with corn. <cite>Wurster et al. (2020)</cite>
 {:.figcaption}
+
+Our comparison between GPP anomalies estimated by the L4C and both weekly crop condition anomalies at the state-level and annual yield anomalies at the county-level showed that the SMAP L4C can provide valuable information on crop condition at higher temporal and spatial resolution that what is currently available at the time of this writing.
 
 ## Citations
 
